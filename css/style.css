@@ -1,0 +1,484 @@
+/* common css here */
+*{
+
+    margin: 0;
+    padding:0; 
+    box-sizing: border-box;
+}
+body{
+
+    color: #666666;
+    font-family: Georgia;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 1000%;
+}
+img{
+
+    max-width: 100%;
+    height: auto;
+}
+.alignLeft{
+
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.alignRight{
+
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.alignCenter{
+
+    display: block;
+    margin: 0 auto 15px;
+}
+/* header css start here  */
+.header-area{
+    width: 100%;
+    clear: both;
+}
+#tob_header_area{
+ 
+    background: #ba2e1f; 
+    width: 100%;
+    padding: 15px 0;
+
+}
+.inner_top_header{
+
+    overflow: hidden;
+}
+.mini_menu{
+
+    float: left;
+    width: 70%;
+    padding-top: 5px;
+}
+.mini_menu ul{
+ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+ 
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.mini_menu ul li a{
+ 
+   display: block;
+   color: white;
+   font-size: 14px;
+   text-decoration: none;
+   
+}
+.mini_menu ul li a:hover{
+
+    color: #ddd;
+}
+.mini_menu ul li::after{
+
+    content: "";
+
+    position: absolute;
+    background : #fff;
+    width: 1px;
+    height: 12px;
+    top: 6px;
+    right: -10px;
+}
+.mini_menu ul li:last-child::after{
+
+   display: none;
+}
+.search_area{
+
+    float: right;
+    width: 30%;
+}
+.search_area form{
+
+     max-width: 210px;
+     width: 96%;
+     background: #fff;
+     border-radius: 25px;
+     float: right;
+     padding: 2%;
+}
+.search_area input{
+
+    border: 0 solid;
+    color: #000;
+    float: left;
+    width: 75%;
+    padding: 1%;
+}
+.search_area input[type="submit"]{
+
+    background: url('../img/search-img/search.png');
+    background-repeat: no-repeat;
+    width: 23%;
+    background-position: right;
+    cursor: pointer;
+ 
+}
+/* header css end here  */
+
+/* main header start here  */
+
+#main_header_area{
+
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+
+    overflow: hidden;
+    padding: 40px 0;
+}
+.log_area{
+    float: left;
+    width: 240px;
+}
+.socail_area{
+
+    float: right;
+    max-width: 650px;
+    width: 100%;
+    padding-top: 20px;
+}
+.socail_area ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    
+}
+.socail_area ul li{
+
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.socail_area ul li a{
+
+    display: block;
+    text-decoration: none;
+   
+    
+}
+.socail_area ul li i{
+
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+}
+.socail_area ul li :hover{
+
+   background: #ba2e1f;
+}
+.socail_area ul li i.fas {
+
+    background: #ba2e1f;
+}
+
+/* main header  end here  */
+
+/* main menu  start here  */
+
+#main_menu{
+
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+
+    background: #333333;
+    position: relative; 
+    padding: 15px 0;
+    min-height: 30px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.inner_menu::after{
+
+    background: #2b2b2b;
+    position: absolute; 
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+
+}
+
+#main_menu ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    
+    
+}
+#main_menu ul li{
+
+    display: inline-block;
+    margin: 0 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+#main_menu ul li a{
+
+    color: #fff;
+    text-decoration: none;
+    display: block; 
+    padding: 5px;
+}
+#main_menu ul li a:hover{
+
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+
+    color: #fff;
+}
+#main_menu ul li:hover a{
+
+    color: #ba2e1f;
+}
+/* dropdown style  */
+#main_menu ul ul{
+
+    position: absolute;
+   background: #ba2e1f;
+   width: 180px;
+   left: -999999px;
+   top: 33px;
+
+}
+#main_menu ul  li:hover ul{
+
+   left: 0;
+   
+}
+#main_menu ul li:hover ul ul{
+
+    left: -999999px;
+   
+}
+#main_menu ul li ul li:hover ul{
+
+    left:  180px;
+   
+}
+#main_menu ul ul li{
+
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+
+    background: #333333;
+    color: #fff;
+}
+#main_menu ul ul li:hover ul li a{
+
+    background: #333333;
+    color: #fff;
+}
+#main_menu ul ul li:hover ul li a{
+
+    background: none;
+    color: #fff;
+}
+#main_menu ul ul li ul li a:hover{
+
+    background: #333333;
+    color: #fff;
+}
+#main_menu ul ul ul{
+
+
+   left: 180px;
+   top: 25px;
+
+}
+
+/* main menu  end here  */
+
+/* slider start here  */
+.item img{
+
+    width: 100%;
+}
+/* slider end here  */
+
+
+/* hero_area start here  */
+
+ #hero_area{
+
+    background: #fff;
+    padding: 0;
+    margin: 0;
+}
+.inner_hero{
+
+    overflow: hidden;
+}
+.inner_hero h1{
+
+    color: black;
+    font-size: 86px;
+    margin-right: 15px;
+    line-height: 106px;
+    text-transform: uppercase;
+}
+.inner_hero p{
+
+    line-height: 30px;
+    font-size: 20px;
+}
+.inner_hero a{
+
+    text-decoration: none;
+    float: right;
+    color: red;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: normal;
+} 
+/* hero_area end here  */
+
+/* work_area start here  */
+
+#work_area{
+
+    background-color: #f2f2f2;
+    padding: 45px 0;
+    
+}
+
+
+.child_work{
+
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+
+    font-size: 26px;
+    color: #333333;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.child_work a{
+
+    text-transform: capitalize;
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+    clear: both;
+    display: inline-block;
+    float: right;
+}
+.about_area{
+
+    margin-left: 0;
+}
+.about_area img{
+
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 100%;
+}
+.about_area p{
+
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.child_service{
+
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    
+    
+}
+.child_service .service_img{
+
+   width: 25%;
+   float: left;
+    
+}
+.child_service .service_text{
+
+   width: 75%;
+   float: right;
+    
+}
+.child_service .service_text h3{
+
+   font-size: 15px;
+   margin-top: 0;
+   margin-bottom: 5px;
+    
+}
+.child_service .service_text p{
+
+   margin-top: 0;
+   line-height: 1.4em;
+    
+}
+.testimonial_area{
+
+    margin-right: 0;
+}
+.child_testimonial{
+
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+
+    background: url('../img/about-img/3.png');
+    background-repeat: no-repeat;
+    color: #989898;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 15px 0px 15px 65px;
+}  
+.child_testimonial h3 span{
+
+  
+    font-size: 150px;
+    font-weight: normal;
+    
+}  
+
+/* work_area end here  */
